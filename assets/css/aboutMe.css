@@ -1,0 +1,34 @@
+.aboutMeContent {
+    top: -80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.aboutMeText {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.aboutMeImg {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.aboutMeText h2 {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.aboutMeText p {
+    margin-bottom: 0.9rem;
+}
+
+.aboutMeImg img{
+    max-width: 100%;
+    height: auto;
+}

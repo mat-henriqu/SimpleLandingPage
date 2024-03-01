@@ -5,6 +5,7 @@
     left: 0;
     right: 0;
     width: 100%;
+    z-index: 1;
     border-bottom: 2px solid black;
 }
 
@@ -56,5 +57,5 @@
 }
 
 .menuSpacing {
-    height: 65px;
+    height: 59px;
 }
