@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -49,4 +49,8 @@ h6 {
 
 a {
     text-decoration: none;
+}
+
+p {
+    font-size: 1.75rem;
 }
