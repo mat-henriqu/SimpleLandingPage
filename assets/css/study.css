@@ -1,22 +1,36 @@
-.studyContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap);
+.gridOneContentStudy {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
     min-height: 100vh;
 }
 
-.studyText{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+.gridMainHeadingStudy{
+    /* h2 */
+    margin-top: 5rem;
+    margin-bottom: 15rem;
 }
 
-.studyText h2 {
-    text-transform: uppercase;
-    font-size: 2.3rem;
-    margin-bottom: 1.2rem;
+.gridDescriptionStudy{
+    /* p */
+    margin-top: -13.5rem;
+    margin-bottom: 2.5rem;
 }
 
-.studyText p {
-    margin-bottom: 0.9rem;
+.gridStudy {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--gap);
+    counter-reset: gridCounter;
+}
+
+.gridStudy img {
+    max-width: 90%;
+    height: 90%;
+    overflow: auto;
+    transition: all 300ms ease-in-out;
+}
+
+.gridStudy img:hover{
+    transform: translate(2%, -2%) scale(1.28);
 }
