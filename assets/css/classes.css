@@ -23,9 +23,9 @@
 .mainContent {
     max-width: 1200px;
     margin: auto;
-    padding: var(--gap);
 }
 
 .section {
     min-height: 100vh;
+    padding: 3rem;
 }

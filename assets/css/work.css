@@ -1,38 +1,37 @@
-.aboutMeContent {
-    top: -80px;
+.workContent {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--gap);
     min-height: 100vh;
-
 }
 
-.aboutMeText {
+.workText {
     display: flex;
-    flex-flow: column nowrap;
-    flex: 1 1 50%;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-
 }
 
-.aboutMeImg {
-    display: flex;
-    flex-flow: column wrap;
+.workImg {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
     justify-content: center;
-
+    gap: 100px;
 }
 
-.aboutMeText h2 {
+.workText h2 {
     text-transform: uppercase;
     font-size: 2.3rem;
     margin-bottom: 1.2rem;
 }
 
-.aboutMeText p {
+.workText p {
     margin-bottom: 0.9rem;
 }
 
-.aboutMeImg img {
+.workImg img {
     max-width: 100%;
     height: auto;
+    margin: auto;
 }

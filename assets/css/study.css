@@ -1,0 +1,22 @@
+.studyContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.studyText{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.studyText h2 {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.studyText p {
+    margin-bottom: 0.9rem;
+}

@@ -1,15 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
+    scroll-behavior:smooth;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 16px;
     color: var(--primaryColor);
 }
 
@@ -20,17 +22,16 @@ h4,
 h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 h1 {
     font-size: 6rem;
-    text-transform: uppercase;
 }
 
 h2 {
-    text-transform: uppercase;
     font-size: 2.3rem;
-    margin-bottom: 1.2rem;
 }
 
 h3 {
@@ -51,6 +52,7 @@ h6 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 p {
