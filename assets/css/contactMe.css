@@ -1,0 +1,43 @@
+.contactMeContent {
+    padding-top: 5rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+
+}
+
+.contactMeText {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+}
+
+.contactMeImg {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+}
+
+.contactMeText h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.contactMeText p {
+    margin-bottom: 0.9rem;
+}
+
+.contactMeImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contactForm {
+    max-width: 100%;
+    height: auto;
+    grid-column: span 2;
+}
