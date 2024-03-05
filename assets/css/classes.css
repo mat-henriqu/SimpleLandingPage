@@ -29,3 +29,8 @@
     min-height: 100vh;
     padding: 3rem;
 }
+
+body .fullWidth {
+    width: 100%;
+    flex: 1 1 100%;
+}
