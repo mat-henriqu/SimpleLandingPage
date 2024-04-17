@@ -34,3 +34,13 @@
 .gridProjects img:hover {
     transform: translate(2%, -2%) scale(1.28);
 }
+
+.titleprojects {
+    font-size: 25px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+figcaption {
+    margin-bottom: 28px;
+}
