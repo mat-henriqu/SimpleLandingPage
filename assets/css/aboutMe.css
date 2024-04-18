@@ -15,11 +15,46 @@
 
 }
 
+.aboutMeText {
+    overflow:auto;
+}
+
+@keyframes reveal {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.aboutMeText {
+    animation: reveal 4s  alternate; 
+}
+
+
 .aboutMeImg {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 
+}
+
+.aboutMeImg {
+    overflow:auto;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.aboutMeImg {
+    animation: bounce 2s infinite ; 
 }
 
 .aboutMeText h2 {

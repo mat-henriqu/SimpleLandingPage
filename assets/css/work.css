@@ -35,3 +35,73 @@
     height: auto;
     margin: auto;
 }
+
+.workText {
+    overflow: auto;
+}
+
+.workText {
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.imgreact {
+    overflow: auto;
+}
+
+.imgreact {
+    transform-origin: center;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.imgbanco {
+    overflow: auto;
+}
+
+.imgbanco {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.pulse {
+    overflow: auto;
+}
+
+.pulse {
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
