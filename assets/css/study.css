@@ -17,18 +17,24 @@
     margin-bottom: 2.5rem;
 }
 
+.gridTitleStudy {
+    text-align: center;
+    font-weight: bold;
+}
+
 .gridStudy {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--gap);
-    counter-reset: gridCounter;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
 .gridStudy img {
-    width: 90%;
-    height: 90%;
+    width: 392px;
+    height: 271px;
     overflow: auto;
     transition: all 300ms ease-in-out;
+    margin: 20px;
 }
 
 .gridStudy img:hover {
