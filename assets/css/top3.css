@@ -38,5 +38,22 @@
     font-style: italic;
     top: -1.2rem;
     left: -5px;
-    transform: rotate(8deg);
+    transform: rotate(7deg);
+}
+
+.grid h3 {
+    overflow: auto;
+}
+
+.grid h3 {
+    animation: count 2s infinite;
+}
+
+@keyframes count {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
 }
