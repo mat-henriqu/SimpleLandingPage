@@ -1,29 +1,29 @@
 [[redirects]]
-  from = "/aboutMe"
+  from = "/"
   to = "/aboutMe.html"
   status = 200
 
 [[redirects]]
-  from = "/work"
+  from = "/work.html"
   to = "/work.html"
   status = 200
 
 [[redirects]]
-  from = "/top3Work"
+  from = "/top3Work.html"
   to = "/top3Work.html"
   status = 200
 
 [[redirects]]
-  from = "/study"
+  from = "/study.html"
   to = "/study.html"
   status = 200
 
 [[redirects]]
-  from = "/projects"
+  from = "/projects.html"
   to = "/projects.html"
   status = 200
 
 [[redirects]]
-  from = "/contact"
+  from = "/contact.html"
   to = "/contact.html"
   status = 200
