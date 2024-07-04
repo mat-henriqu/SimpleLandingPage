@@ -1,0 +1,29 @@
+[[redirects]]
+  from = "/aboutMe"
+  to = "/aboutMe.html"
+  status = 200
+
+[[redirects]]
+  from = "/work"
+  to = "/work.html"
+  status = 200
+
+[[redirects]]
+  from = "/top3Work"
+  to = "/top3Work.html"
+  status = 200
+
+[[redirects]]
+  from = "/study"
+  to = "/study.html"
+  status = 200
+
+[[redirects]]
+  from = "/projects"
+  to = "/projects.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
