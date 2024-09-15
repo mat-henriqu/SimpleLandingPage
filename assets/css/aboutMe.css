@@ -71,3 +71,12 @@
     max-width: 100%;
     height: auto;
 }
+
+@media (max-width: 1280px) {
+    .aboutMeContent {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
