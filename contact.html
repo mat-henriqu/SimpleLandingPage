@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="/assets/css/classes.css">
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/contactMe.css">
+    <script>
+        function sendEmail() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject = `Contact from ${firstName} ${lastName}`;
+            const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+            window.location.href = `mailto:theush933@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
+    </script>
 </head>
 
 <body>
@@ -29,47 +42,44 @@
             </nav>
         </div>
     </aside>
+    <div class="menuSpacing"></div>
     <section id="contact" class="blueBg section">
         <div class="mainContent contactMeContent">
             <div class="contactMeText">
-                <h2>Social media</h2>
+                <h2>Get in Touch</h2>
+                <p>Feel free to reach out through any of the following channels:</p>
                 <p>
-                    <a href="https://github.com/mat-henriqu" target="_blank"><img src="/assets/img/github.png"
-                            alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/mat-henriqu/" target="_blank"><img
-                            src="/assets/img/linkedin.png" alt=""></a>
-                    <a href="https://www.instagram.com/mat_henriqu/" target="_blank"><img
-                            src="/assets/img/instagram.png" alt=""></a>
-                    <a href="https://www.dio.me/users/mat_henriqu" target="_blank"><img src="/assets/img/dio.svg"
-                            alt=""></a>
-                    <a href="https://wa.me/+5534997638331" target="_blank"><img src="/assets/img/whatsapp.png"
-                            alt=""></a>
+                    <a href="https://github.com/mat-henriqu" target="_blank" aria-label="GitHub"><img src="/assets/img/github.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/mat-henriqu/" target="_blank" aria-label="LinkedIn"><img src="/assets/img/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/mat_henriqu/" target="_blank" aria-label="Instagram"><img src="/assets/img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.dio.me/users/mat_henriqu" target="_blank" aria-label="DIO"><img src="/assets/img/dio.svg" alt="DIO"></a>
+                    <a href="https://wa.me/+5534997638331" target="_blank" aria-label="WhatsApp"><img src="/assets/img/whatsapp.png" alt="WhatsApp"></a>
                 </p>
             </div>
             <div class="contactMeImg">
-                <p><img src="/assets/img/contactMePage.svg" alt="Logo que indica algo se conectando"></p>
+                <p><img src="/assets/img/contactMePage.svg" alt="Connect with me"></p>
             </div>
             <div class="contactForm">
                 <fieldset class="formGrid">
-                    <legend>Contact Me</legend>
+                    <legend>Contact Form</legend>
                     <div class="formGroup">
                         <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Your first Name">
+                        <input type="text" name="firstName" id="firstName" placeholder="Your First Name" required>
                     </div>
                     <div class="formGroup">
                         <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Your last Name">
+                        <input type="text" name="lastName" id="lastName" placeholder="Your Last Name" required>
                     </div>
                     <div class="formGroup">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Your email">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
                     </div>
                     <div class="formGroup fullWidth">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Your message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
                     </div>
                     <div class="formGroup fullWidth">
-                        <button type="submit">Send Message</button>
+                        <button type="button" onclick="sendEmail()">Send Message</button>
                     </div>
                 </fieldset>
             </div>

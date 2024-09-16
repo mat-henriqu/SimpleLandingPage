@@ -1,12 +1,12 @@
 .gridOneContent {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
     min-height: 100vh;
 }
 
 .gridMainHeading {
     /* h2 */
+    margin-top: 8rem;
     margin-bottom: 15rem;
 }
 
