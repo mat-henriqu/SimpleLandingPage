@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/assets/css/classes.css">
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/contactMe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script>
         function sendEmail() {
             const firstName = document.getElementById('firstName').value;
@@ -31,7 +32,7 @@
         <div class="mainContent menuContent">
             <h1><a href="">Matheus Henrique 👨🏻‍💻</a></h1>
             <nav>
-                <ul>
+                <ul id="menu-items">
                     <li><a href="aboutMe.html">About me</a></li>
                     <li><a href="work.html">Work</a></li>
                     <li><a href="top3Work.html">Top 3 Works</a></li>
@@ -39,21 +40,28 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <button id="menu-toggle" class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
         </div>
     </aside>
-    <div class="menuSpacing"></div>
     <section id="contact" class="blueBg section">
         <div class="mainContent contactMeContent">
             <div class="contactMeText">
                 <h2>Get in Touch</h2>
                 <p>Feel free to reach out through any of the following channels:</p>
                 <p>
-                    <a href="https://github.com/mat-henriqu" target="_blank" aria-label="GitHub"><img src="/assets/img/github.png" alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/mat-henriqu/" target="_blank" aria-label="LinkedIn"><img src="/assets/img/linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://www.instagram.com/mat_henriqu/" target="_blank" aria-label="Instagram"><img src="/assets/img/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.dio.me/users/mat_henriqu" target="_blank" aria-label="DIO"><img src="/assets/img/dio.svg" alt="DIO"></a>
-                    <a href="https://wa.me/+5534997638331" target="_blank" aria-label="WhatsApp"><img src="/assets/img/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="https://github.com/mat-henriqu" target="_blank" aria-label="GitHub"><img
+                            src="/assets/img/github.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/mat-henriqu/" target="_blank" aria-label="LinkedIn"><img
+                            src="/assets/img/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/mat_henriqu/" target="_blank" aria-label="Instagram"><img
+                            src="/assets/img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.dio.me/users/mat_henriqu" target="_blank" aria-label="DIO"><img
+                            src="/assets/img/dio.svg" alt="DIO"></a>
+                    <a href="https://wa.me/+5534997638331" target="_blank" aria-label="WhatsApp"><img
+                            src="/assets/img/whatsapp.png" alt="WhatsApp"></a>
                 </p>
             </div>
             <div class="contactMeImg">
@@ -76,7 +84,8 @@
                     </div>
                     <div class="formGroup fullWidth">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+                        <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10"
+                            required></textarea>
                     </div>
                     <div class="formGroup fullWidth">
                         <button type="button" onclick="sendEmail()">Send Message</button>
@@ -85,6 +94,7 @@
             </div>
         </div>
     </section>
+    <script src="/assets/js/menu.js"></script>
 </body>
 
 </html>

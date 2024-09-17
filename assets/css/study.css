@@ -1,42 +1,82 @@
 .gridOneContentStudy {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .gridMainHeadingStudy {
-    /* h2 */
     margin-top: 5rem;
-    margin-bottom: 15rem;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    text-align: center;
 }
 
 .gridDescriptionStudy {
-    /* p */
-    margin-top: -13.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .gridTitleStudy {
     text-align: center;
     font-weight: bold;
+    margin: 2rem;
 }
 
 .gridStudy {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .gridStudy img {
-    width: 392px;
-    height: 271px;
-    overflow: auto;
+    width: 350px;
+    height: auto;
     transition: all 300ms ease-in-out;
-    margin: 20px;
+    cursor: pointer;
+    margin: 0 10px;
 }
 
 .gridStudy img:hover {
-    transform: translate(2%, -2%) scale(1.28);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .gridMainHeadingStudy {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .gridDescriptionStudy {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .gridStudy {
+        gap: 15px;
+    }
+
+    .gridStudy img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gridMainHeadingStudy {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .gridDescriptionStudy {
+        font-size: 1.5rem;
+    }
+
+    .gridStudy img {
+        width: 100%;
+        margin: 10px 0;
+    }
 }

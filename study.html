@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/assets/css/classes.css">
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/study.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <div class="mainContent menuContent">
             <h1><a href="">Matheus Henrique 👨🏻‍💻</a></h1>
             <nav>
-                <ul>
+                <ul id="menu-items">
                     <li><a href="aboutMe.html">About me</a></li>
                     <li><a href="work.html">Work</a></li>
                     <li><a href="top3Work.html">Top 3 Works</a></li>
@@ -26,10 +27,12 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <button id="menu-toggle" class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
         </div>
     </aside>
-    <div class="menuSpacing"></div>
     <section id="study" class="whiteBg section">
         <div class="mainContent gridOneContentStudy">
             <h2 class="gridMainHeadingStudy">Faculty</h2>
@@ -104,7 +107,8 @@
                 </div>
                 <div>
                     <a href="https://hermes.dio.me/certificates/8BLOM2NE.pdf" target="_blank">
-                        <img src="/assets/img/certificadoBootcampNexaFundamentosIAGenerativaDio.jpg" alt="certificado Fundamentos de IA Generativa Dio">
+                        <img src="/assets/img/certificadoBootcampNexaFundamentosIAGenerativaDio.jpg"
+                            alt="certificado Fundamentos de IA Generativa Dio">
                     </a>
                 </div>
             </div>
@@ -124,6 +128,7 @@
             </div>
         </div>
     </section>
+    <script src="/assets/js/menu.js"></script>
 </body>
 
 </html>
