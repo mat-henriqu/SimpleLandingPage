@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/aboutMe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/i18next@20.6.1/dist/umd/i18next.min.js"></script>
 </head>
 
 <body>
@@ -26,6 +27,9 @@
                     <li><a href="study.html">Study</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <button class="menu-language" onclick="toggleLanguage()">
+                        <i class="fa-solid fa-language"></i>
+                    </button>
                 </ul>
                 <button id="menu-toggle" class="menu-icon">
                     <i class="fas fa-bars"></i>
@@ -33,15 +37,13 @@
             </nav>
         </div>
     </aside>
+
     <section id="aboutMe" class="aboutMe blueBg section">
         <div class="mainContent aboutMeContent">
             <div class="aboutMeText" id="text">
-                <h2>About me</h2>
-                <p>Front-End Developer with experience in Java, Spring Boot.
-                    Development of web applications using technologies such as React, Next.js, and TypeScript. I have
-                    knowledge in databases, as well as skills in HTML, CSS, and styling frameworks such as Bootstrap,
-                    Tailwind and Shadcn. Committed to delivering efficient, high-quality solutions.</p>
-                <h2>Skills</h2>
+                <h2 id="aboutMeTitle"></h2>
+                <p id="aboutMeDescription"></p>
+                <h2 id="skillsTitle"></h2>
                 <p>
                     <img src="/assets/img/github.png" alt="GitHub">
                     <img src="/assets/img/sql.png" alt="SQL">
@@ -55,12 +57,12 @@
                 </p>
             </div>
             <div class="aboutMeImg">
-                <p><img src="/assets/img/javaCssHtml.svg"
-                        alt="Homem segurando a logo do front end, javaScript Css e Html"></p>
+                <p><img src="/assets/img/javaCssHtml.svg" alt="Homem segurando a logo do front end, javaScript Css e Html"></p>
             </div>
         </div>
     </section>
     <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/i18nAboutMe.js"></script>
 </body>
 
 </html>
