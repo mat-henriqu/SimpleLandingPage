@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/study.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/i18next@20.6.1/dist/umd/i18next.min.js"></script>
 </head>
 
 <body>
@@ -26,6 +27,9 @@
                     <li><a href="study.html">Study</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <button class="menu-language" onclick="toggleLanguage()">
+                        <i class="fa-solid fa-language"></i>
+                    </button>
                 </ul>
                 <button id="menu-toggle" class="menu-icon">
                     <i class="fas fa-bars"></i>
@@ -35,10 +39,10 @@
     </aside>
     <section id="study" class="whiteBg section">
         <div class="mainContent gridOneContentStudy">
-            <h2 class="gridMainHeadingStudy">Faculty</h2>
-            <p class="gridDescriptionStudy">Analysis and Systems Development</p>
-            <h2>Courses</h2>
-            <p class="gridTitleStudy">Logic Programming</p>
+            <h2 class="gridMainHeadingStudy" id="faculty"></h2>
+            <p class="gridDescriptionStudy" id="descriptionFaculty"></p>
+            <h2 id="courses"></h2>
+            <p class="gridTitleStudy" id="typeLogic"></p>
             <div class="gridStudy">
                 <div>
                     <img src="/assets/img/certificadoLogicaProgUdemy.jpg" alt="certificado Logica Prog Udemy">
@@ -52,7 +56,7 @@
                         alt="certificado Logica Prog Curso Em Video">
                 </div>
             </div>
-            <p class="gridTitleStudy">Front End</p>
+            <p class="gridTitleStudy">Front-End</p>
             <div class="gridStudy">
                 <div>
                     <a href="https://www.udemy.com/certificate/UC-3062d483-cdad-46c1-b768-291b04e9bcb7/"
@@ -112,8 +116,7 @@
                     </a>
                 </div>
             </div>
-            <p class="gridTitleStudy">Java e Linux</p>
-
+            <p class="gridTitleStudy">Java | Linux</p>
             <div class="gridStudy">
                 <div>
                     <a href="https://hermes.dio.me/certificates/75E34FAF.pdf" target="_blank">
@@ -129,6 +132,7 @@
         </div>
     </section>
     <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/i18nStudy.js"></script>
 </body>
 
 </html>
