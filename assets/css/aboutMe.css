@@ -1,10 +1,13 @@
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .aboutMeContent {
-    top: -80px;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: var(--gap);
-    min-height: 100vh;
-
 }
 
 .aboutMeText {
@@ -12,7 +15,6 @@
     flex-flow: column nowrap;
     flex: 1 1 50%;
     justify-content: center;
-
 }
 
 .aboutMeText {
