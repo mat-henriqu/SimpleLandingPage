@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/work.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/i18next@20.6.1/dist/umd/i18next.min.js"></script>
 </head>
 
 <body>
@@ -26,6 +27,9 @@
                     <li><a href="study.html">Study</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <button class="menu-language" onclick="toggleLanguage()">
+                        <i class="fa-solid fa-language"></i>
+                    </button>
                 </ul>
                 <button id="menu-toggle" class="menu-icon">
                     <i class="fas fa-bars"></i>
@@ -36,41 +40,29 @@
     <section id="work" class="whiteBg section">
         <div class="mainContent workContent">
             <div class="workText">
-                <h2>Work</h2>
-                <p>
-                    I am Matheus Henrique, a front-end developer specializing in creating efficient and scalable web
-                    solutions. With a solid foundation in both front-end and back-end development, I contribute to all
-                    phases of a project, ensuring consistent and high-quality results. <br><br>
-
-                    🔧 <strong>Technical Skills</strong> <br><br>
-                    - <strong>Languages:</strong> Java, JavaScript, TypeScript <br>
-                    - <strong>Back-end Framework:</strong> Spring Boot <br>
+                <h3 id="workTitle"></h3>
+                <p id="workText"></p>
+                <br>
+                <br>
+                <h3 id="skillsTitle"></h3>
+                <p id="skillsText">
+                    - <strong id="lang"></strong> Java, JavaScript, TypeScript <br>
+                    - <strong>Back-end FrameWorks:</strong> Spring Boot <br>
                     - <strong>Front-end:</strong> HTML, CSS, JavaScript, TypeScript, React, Next.js <br>
-                    - <strong>Styling:</strong> Bootstrap, Tailwind, Shadcn <br>
-                    - <strong>Databases:</strong> SQL, MySQL, PostgreSQL <br>
-                    - <strong>Tools:</strong> Git, GitHub, RESTful APIs <br><br>
-
-                    📚 <strong>About Me</strong> <br><br>
-                    I am a front-end developer, particularly focused on using React to build dynamic and responsive
-                    interfaces. I am always striving to improve my skills by adopting modern tools and best practices. I
-                    work well in teams and believe that collaboration is key to achieving innovative and scalable
-                    results. <br><br>
-
-                    💼 <strong>Professional Experience</strong> <br><br>
-                    <strong>Kyros Tecnologia</strong> - Development Intern (1 year) <br>
-                    I utilized a broad range of skills, including Java, Spring Boot, Databases, HTML, CSS, JavaScript,
-                    TypeScript, React, Next.js, Bootstrap, Tailwind, and Shadcn. I worked in an agile environment,
-                    contributing to the development of web applications, delivering solutions, and driving significant
-                    improvements to the projects. <br><br>
-
-                    <strong>Relotec Sistemas de Ponto e Acesso</strong> - System Support (4 months) <br>
-                    I provided technical support and solutions for time and access control systems, ensuring stable and
-                    efficient operations. <br><br>
-
-                    I am always seeking new challenges and opportunities to continue learning and improving my skills.
+                    - <strong id="styles"></strong> Bootstrap, Tailwind, Shadcn <br>
+                    - <strong id="database"></strong> SQL, MySQL, PostgreSQL <br>
+                    - <strong id="tools"></strong> Git, GitHub, RESTful APIs <br>
                 </p>
+                <br>
+                <br>
+                <h3 id="experience"></h3>
+                <br>
+                <h5 id="kyrosTitle"></h5>
+                <p id="kyrosText"></p>
+                <br>
+                <h5 id="relotecTitle"></h5>
+                <p id="relotecText"></p>
             </div>
-
             <div class="workImg">
                 <img src="/assets/img/spring-boot-svgrepo.svg" alt="Spring Boot Logo" class="pulse">
                 <img src="/assets/img/java-logo-svgrepo.svg" alt="Java Logo" class="pulse">
@@ -80,6 +72,7 @@
         </div>
     </section>
     <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/i18nWork.js"></script>
 </body>
 
 </html>
