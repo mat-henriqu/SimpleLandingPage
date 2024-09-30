@@ -46,6 +46,23 @@
     animation: slideIn 2s forwards;
 }
 
+.curriculo {
+    background-color: transparent;
+    color: inherit;
+    border: 2px solid var(--primaryColor);
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.curriculo:hover {
+    transform: translateY(-3px);
+}
+
 @keyframes slideIn {
     from {
         transform: translateX(-100%);

@@ -54,6 +54,8 @@ h6 {
 a {
     text-decoration: none;
     color: inherit;
+    text-align: center;
+    display: flex;
 }
 
 p {
