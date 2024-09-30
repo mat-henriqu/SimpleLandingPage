@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/i18next@20.6.1/dist/umd/i18next.min.js"></script>
 </head>
 
 <body>
@@ -26,6 +27,9 @@
                     <li><a href="study.html">Study</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <button class="menu-language" onclick="toggleLanguage()">
+                        <i class="fa-solid fa-language"></i>
+                    </button>
                 </ul>
                 <button id="menu-toggle" class="menu-icon">
                     <i class="fas fa-bars"></i>
@@ -35,9 +39,9 @@
     </aside>
     <section id="projects" class="whiteBg section">
         <div class="mainContent gridOneContentProjects">
-            <h2 class="gridMainHeadingProjects">Projects</h2>
-            <h2 class="gridDescriptionProjects">Projects Web</h2>
-            <p class="titleprojects">Developed using HTML and CSS.</p>
+            <h2 class="gridMainHeadingProjects" id="headingProjects"></h2>
+            <h2 class="gridDescriptionProjects" id="descriptionProjects"></h2>
+            <p class="titleprojects" id="titleprojectsSimple"></p>
             <div class="gridProjects">
                 <div>
                     <figure>
@@ -64,7 +68,7 @@
                     </figure>
                 </div>
             </div>
-            <p class="titleprojects">Developed using HTML, CSS and BootStrap.</p>
+            <p class="titleprojects" id="titleprojectsMid"></p>
             <div class="gridProjects">
                 <div>
                     <figure>
@@ -91,7 +95,7 @@
                     </figure>
                 </div>
             </div>
-            <p class="titleprojects">Developed using React (Vite | JavaScript | TypeScript)</p>
+            <p class="titleprojects" id="titleprojectsHigh"></p>
             <div class="gridProjects">
                 <div>
                     <figure>
@@ -121,6 +125,7 @@
         </div>
     </section>
     <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/i18nProjects.js"></script>
 </body>
 
 </html>
