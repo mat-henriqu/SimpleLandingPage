@@ -15,7 +15,7 @@ const resources = {
             "descriptionProjects": "Projetos Web",
             "titleprojectsHtmCss": "Desenvolvido com HTML e CSS",
             "titleprojectsHtmCssBoot": "Desenvolvido com HTML, CSS e BootStrap.",
-            "titleprojectsHtmCssJs": "Developed com HTML, CSS e JavaScript.",
+            "titleprojectsHtmCssJs": "Desenvolvido com HTML, CSS e JavaScript.",
             "titleprojectsReact": "Desenvolvido com React (Vite | JavaScript | TypeScript)",
         }
     }
