@@ -3,18 +3,20 @@ const resources = {
         translation: {
             "headingProjects": "Projects",
             "descriptionProjects": "Projects Web",
-            "titleprojectsSimple": "Developed with HTML and CSS",
-            "titleprojectsMid": "Developed with HTML, CSS and BootStrap.",
-            "titleprojectsHigh": "Developed with React (Vite | JavaScript | TypeScript)",
+            "titleprojectsHtmCss": "Developed with HTML and CSS",
+            "titleprojectsHtmCssBoot": "Developed with HTML, CSS and BootStrap.",
+            "titleprojectsHtmCssJs": "Developed with HTML, CSS and JavaScript.",
+            "titleprojectsReact": "Developed with React (Vite | JavaScript | TypeScript)",
         }
     },
     pt: {
         translation: {
             "headingProjects": "Projetos",
             "descriptionProjects": "Projetos Web",
-            "titleprojectsSimple": "Desenvolvido com HTML e CSS",
-            "titleprojectsMid": "Desenvolvido com HTML, CSS e BootStrap.",
-            "titleprojectsHigh": "Desenvolvido com React (Vite | JavaScript | TypeScript)",
+            "titleprojectsHtmCss": "Desenvolvido com HTML e CSS",
+            "titleprojectsHtmCssBoot": "Desenvolvido com HTML, CSS e BootStrap.",
+            "titleprojectsHtmCssJs": "Developed com HTML, CSS e JavaScript.",
+            "titleprojectsReact": "Desenvolvido com React (Vite | JavaScript | TypeScript)",
         }
     }
 };
@@ -29,9 +31,10 @@ i18next.init({
 function updateContent() {
     document.getElementById('headingProjects').innerText = i18next.t('headingProjects');
     document.getElementById('descriptionProjects').innerText = i18next.t('descriptionProjects');
-    document.getElementById('titleprojectsSimple').innerText = i18next.t('titleprojectsSimple');
-    document.getElementById('titleprojectsMid').innerText = i18next.t('titleprojectsMid');
-    document.getElementById('titleprojectsHigh').innerText = i18next.t('titleprojectsHigh');
+    document.getElementById('titleprojectsHtmCss').innerText = i18next.t('titleprojectsHtmCss');
+    document.getElementById('titleprojectsHtmCssBoot').innerText = i18next.t('titleprojectsHtmCssBoot');
+    document.getElementById('titleprojectsHtmCssJs').innerText = i18next.t('titleprojectsHtmCssJs');
+    document.getElementById('titleprojectsReact').innerText = i18next.t('titleprojectsReact');
 }
 
 function toggleLanguage() {
