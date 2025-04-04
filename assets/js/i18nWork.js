@@ -11,11 +11,15 @@ const resources = {
       tools: "Tools:",
       experience: "💼 Professionals Experiences",
       kyrosTitle:
-        "<strong>Kyros Tecnologia</strong> - Development Intern (1 year)",
+        "<strong>Kyros Tecnologia</strong> - Systems Analyst II (April 2025 - Present)",
       kyrosText:
+        "I currently work as a Systems Analyst II, contributing to front-end development using Angular, Bootstrap, npm and GitLab. I started as a development intern, where I used a wide range of web technologies.",
+      kyrosTitleEstagiario:
+        "<strong>Kyros Tecnologia</strong> - Development Intern (October 2023 - April 2025 · 1 year and 7 months)",
+      kyrosTextEstagiario:
         "I utilized a broad range of skills, including Java, Spring Boot, Databases, HTML, CSS, JavaScript, TypeScript, React, Next.js, Bootstrap, Tailwind, and Shadcn. I worked in an agile environment, contributing to the development of web applications, delivering solutions, and driving significant improvements to the projects.",
       relotecTitle:
-        "<strong>Relotec Sistemas de Ponto e Acesso</strong> - System Support (4 months)", // Novo campo
+        "<strong>Relotec Sistemas de Ponto e Acesso</strong> - System Support (May 2023 - September 2023 · 5 months)",
       relotecText:
         "I provided technical support and solutions for time and access control systems, ensuring stable and efficient operations.", // Novo campo
     },
@@ -32,13 +36,17 @@ const resources = {
       tools: "Ferramentas:",
       experience: "💼 Experiências Profissionais",
       kyrosTitle:
-        "<strong>Kyros Tecnologia</strong> - Estagiário em Desenvolvimento (1 ano)",
+        "<strong>Kyros Tecnologia</strong> - Analista de Sistema II (Abril de 2025 - Atual)",
       kyrosText:
+        "Atualmente atuo como Analista de Sistema II, contribuindo no desenvolvimento front-end utilizando Angular, Bootstrap, npm e GitLab. Iniciei como estagiário de desenvolvimento, onde utilizei uma ampla gama de tecnologias web.",
+      kyrosTitleEstagiario:
+        "<strong>Kyros Tecnologia</strong> - Estagiário em Desenvolvimento (Outubro de 2023 - Abril de 2025 · 1 ano e 7 meses)",
+      kyrosTextEstagiario:
         "Utilizei uma ampla gama de habilidades, incluindo Java, Spring Boot, Banco de Dados, HTML, CSS, JavaScript, TypeScript, React, Next.js, Bootstrap, Tailwind e Shadcn. Atuei no desenvolvimento de aplicações web em um ambiente ágil, contribuindo com soluções e melhorias significativas para os projetos.",
       relotecTitle:
-        "<strong>Relotec Sistemas de Ponto e Acesso</strong> - Suporte de Sistemas (4 meses)", // Novo campo
+        "<strong>Relotec Sistemas de Ponto e Acesso</strong> - Suporte de Sistemas (Maio de 2023 - Setembro de 2023 · 5 meses)", 
       relotecText:
-        "Prestei suporte técnico e soluções para sistemas de controle de ponto e acesso, garantindo operações estáveis e eficientes.", // Novo campo
+        "Prestei suporte técnico e soluções para sistemas de controle de ponto e acesso, garantindo operações estáveis e eficientes.",
     },
   },
 };
@@ -63,8 +71,10 @@ function updateContent() {
     database: "database",
     tools: "tools",
     experience: "experience",
-    kyrosTitle: "kyrosTitle",
     kyrosText: "kyrosText",
+    kyrosTitle: "kyrosTitle",
+    kyrosTitleEstagiario: "kyrosTitleEstagiario",
+    kyrosTextEstagiario: "kyrosTextEstagiario",
     relotecTitle: "relotecTitle", // Novo campo
     relotecText: "relotecText", // Novo campo
   };
@@ -72,7 +82,11 @@ function updateContent() {
   for (const [key, value] of Object.entries(elements)) {
     const element = document.getElementById(value);
     if (element) {
-      if (key === "kyrosTitle" || key === "relotecTitle") {
+      if (
+        key === "kyrosTitleEstagiario" ||
+        key === "relotecTitle" ||
+        key === "kyrosTitle"
+      ) {
         element.innerHTML = i18next.t(key);
       } else {
         element.innerText = i18next.t(key);
